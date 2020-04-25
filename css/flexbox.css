@@ -10,25 +10,8 @@
   flex: 1 100%;
 }
 
-.header {
-  background: tomato;
-}
-
-.footer {
-  background: lightgreen;
-}
-
 .main {
-  text-align: left;
-  background: deepskyblue;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
+  text-align: left;  
 }
 
 @media all and (min-width: 600px) {
