@@ -30,4 +30,7 @@ body {
   padding: 2em; 
 }
 
-img {max-width:100%;}
+img {
+  max-width:100%;
+  max-heigth:100%;
+}
