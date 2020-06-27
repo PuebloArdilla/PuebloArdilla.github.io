@@ -8,7 +8,7 @@
 .twoBlocks {
   display: flex;  
   flex-wrap: wrap;
-  heigth: 500px;
+  height: 500px;
 }
 
 
