@@ -68,3 +68,9 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
