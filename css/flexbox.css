@@ -78,4 +78,5 @@ p {
   display: flex;
   flex-direction: column;     
   width: 250px;
+  align-self: flex-end;
 }
