@@ -70,7 +70,5 @@ p {
 }
 .box {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
+  flex-direction: column;    
 }
