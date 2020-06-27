@@ -71,5 +71,6 @@ p {
 .box {
   display: flex;
   flex-direction: column;   
+  flex-wrap: wrap;
   width: 300px;
 }
