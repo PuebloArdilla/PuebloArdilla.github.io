@@ -9,6 +9,8 @@
   display: flex;  
   flex-wrap: wrap;
   height: 500px;
+  flex: 1;  
+  overflow: auto;
 }
 
 
