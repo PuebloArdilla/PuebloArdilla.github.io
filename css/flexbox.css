@@ -70,7 +70,6 @@ p {
 }
 .box {
   display: flex;
-  flex-direction: column;   
-  flex-wrap: wrap;
-  width: 300px;
+  flex-direction: column;     
+  width: 250px;
 }
