@@ -14,7 +14,7 @@
 			<aside class="aside aside-2" style="flex-grow: 1;align-self: flex-end">
 				<div class="box">
 					<div><img id="dado" alt="dado" src="img/dado1.jpg" /></div>
-					<div><img alt="lanzar" src="img/lanzar.png" onClick="randomFunction()" /></div>			
+					<div><img style="cursor: pointer;" alt="lanzar" src="img/lanzar.png" onClick="randomFunction()" /></div>			
 				</div>		
 			</aside>
 		</div>		
@@ -30,7 +30,7 @@
 <script>
 function randomFunction() {
   var misionNumer = Math.floor(Math.random() * 6) + 1;
-  var actualMision = "img/mision-" + misionNumer + ".png";	
+  var actualMision = "img/dado" + misionNumer + ".jpg";	
   document.getElementById("dado").src = actualMision; 	 
 }
 </script>
