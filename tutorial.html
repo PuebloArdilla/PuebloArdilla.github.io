@@ -34,8 +34,12 @@ function retroceder() {
 }
 
 function avanzar() {  
-  var tutorial = document.getElementById("tutorial").tutorial;
-  alert(tutorial); 	 
+  var tutorial = parseInt(document.getElementById("tutorial").getAttribute("tutorial"));
+  if(tutorial < 12){
+     var actualMision = "img/tutorial" + (tutorial + 1) + ".png";	
+     document.getElementById("tutorial").src = actualMision; 
+     document.getElementById("tutorial").setAttribute('tutorial', tutorial+1); 	  
+  }
 }
 	
 </script>
