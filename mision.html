@@ -10,7 +10,7 @@
 	<header class="header"><a href="index.html"><img alt="Logo" src="img/logo.png"/></a></header>
 	<div class="wrapper">  
 		<div class="twoBlocks">		
-			<aside class="aside aside-1" style="flex-grow: 3"><img alt="tutorial" src="img/mision-1.png"/></aside>
+			<aside class="aside aside-1" style="flex-grow: 3"><img id="mision" alt="tutorial" src="img/mision-1.png"/></aside>
 			<aside class="aside aside-2" style="flex-grow: 1;align-self: flex-end">
 				<div class="box">
 					<div><img id="dado" alt="dado" src="img/dado1.jpg" /></div>
@@ -28,6 +28,11 @@
   </body>
 </html>
 <script>
+(function() {
+  var misionNumer = Math.floor(Math.random() * 6) + 1;
+  var actualMision = "img/mision-" + misionNumer + ".png";	
+  document.getElementById("mision").src = actualMision;
+})();	
 function randomFunction() {
   var misionNumer = Math.floor(Math.random() * 6) + 1;
   var actualMision = "img/dado" + misionNumer + ".jpg";	
