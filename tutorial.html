@@ -9,7 +9,7 @@
     <div class="wrapper">
       <header class="header"><img alt="Logo" src="img/banner ardilla.png"/></header>        
         <aside class="aside aside-1" style="align-self: flex-end;">
-		<img style="cursor:pointer" id="flechaRetroceder" onclick="retroceder()" alt="tutorial" src="img/flecha izquierda-04.png"/>
+		<img style="cursor:pointer; display:none" id="flechaRetroceder" onclick="retroceder()" alt="tutorial" src="img/flecha izquierda-04.png"/>
 	</aside>
         <aside class="main">
 		<img id="tutorial" alt="tutorial" tutorial="1" src="img/tutorial1.png"/>
@@ -34,9 +34,10 @@ function retroceder() {
      var actualMision = "img/tutorial" + (tutorial - 1) + ".png";	
      document.getElementById("tutorial").src = actualMision; 
      document.getElementById("tutorial").setAttribute('tutorial', tutorial-1); 	  
-  }else{
-     ocultar(document.getElementById("flechaRetroceder"));	  
   }
+  if(tutorial == 2){	
+     ocultar(document.getElementById("flechaRetroceder"));	  
+  }	
 }
 
 function avanzar() {  
@@ -46,7 +47,8 @@ function avanzar() {
      var actualMision = "img/tutorial" + (tutorial + 1) + ".png";	
      document.getElementById("tutorial").src = actualMision; 
      document.getElementById("tutorial").setAttribute('tutorial', tutorial+1); 	  
-  }else{
+  }  
+  if(tutorial == 11)	{
      ocultar(document.getElementById("flechaAvanzar"));  
   }
 }
