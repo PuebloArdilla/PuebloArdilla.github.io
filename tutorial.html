@@ -8,9 +8,15 @@
   <body>
     <div class="wrapper">
       <header class="header"><img alt="Logo" src="img/banner ardilla.png"/></header>        
-        <aside class="aside aside-1" style="align-self: flex-end;"><img alt="tutorial" src="img/flecha izquierda-04.png"/></aside>
-        <aside class="main"><img alt="tutorial" src="img/tutorial1.png"/></aside>
-        <aside class="aside aside-2"><div class="box"><img alt="nueva-mision" src="img/flecha derecha-04.png"/></div></aside>
+        <aside class="aside aside-1" style="align-self: flex-end;">
+		<img onclick="retroceder()" alt="tutorial" src="img/flecha izquierda-04.png"/>
+	</aside>
+        <aside class="main">
+		<img id="tutorial" alt="tutorial" tutorial="1" src="img/tutorial1.png"/>
+	</aside>
+        <aside class="aside aside-2" style="align-self: flex-end;">
+		<img onclick="avanzar()" alt="nueva-mision" src="img/flecha derecha-04.png"/>
+	</aside>
         <footer class="footer">
         <ul>
         	<li><a href="mailto:patricia.ct89@gmail.com">email</a></li>
@@ -20,3 +26,16 @@
     </div>
   </body>
 </html>
+<script>		
+function retroceder() {
+  var misionNumer = Math.floor(Math.random() * 6) + 1;
+  var actualMision = "img/dado" + misionNumer + ".jpg";	
+  document.getElementById("dado").src = actualMision; 	 
+}
+
+function avanzar() {  
+  var tutorial = document.getElementById("tutorial").tutorial;
+  alert(tutorial); 	 
+}
+	
+</script>
